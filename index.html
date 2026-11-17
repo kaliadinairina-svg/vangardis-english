@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vangardis — Criminal Defense Attorneys (concept)</title>
+<meta name="description" content="Concept website for a criminal defense law firm. A study case: fictional firm, fictional data.">
+<meta name="theme-color" content="#0E0D0C">
+<!-- AFTER DEPLOY: replace vangardis.vercel.app with the URL of this English version in the three lines below -->
+<link rel="canonical" href="https://vangardis.vercel.app/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- Preview card for messengers and social networks -->
+<meta property="og:url" content="https://vangardis.vercel.app/">
+<meta property="og:image" content="https://vangardis.vercel.app/preview.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Vangardis">
+<meta property="og:title" content="Vangardis — defense at your door">
+<meta property="og:description" content="Concept website for a criminal defense law firm. A study case: fictional firm, fictional data.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vangardis website hero with the headline Defense at your door">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#0E0D0C}
+a{color:#C9A35C}a:hover{color:#E2C489}
+*{box-sizing:border-box}
+.ph{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 72% 18%,#5a544c 0%,#2c2824 42%,#141210 100%)}
+.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.08) brightness(.82)}
+.ph-label{position:absolute;left:16px;bottom:16px;max-width:78%;font:600 11px/1.45 Manrope,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#E3DACB;background:rgba(14,13,12,.62);border:1px dashed rgba(237,230,218,.4);border-radius:8px;padding:7px 10px}
+.glass{background:rgba(18,16,14,.58);-webkit-backdrop-filter:blur(18px) saturate(120%);backdrop-filter:blur(18px) saturate(120%);border:1px solid rgba(237,230,218,.16)}
+.btn-gold{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;background:#C9A35C;color:#14110D;font:700 15px Manrope,sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn-gold:hover{background:#E2C489;color:#14110D}
+.btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;border:1px solid rgba(201,163,92,.7);color:#EDE6DA;font:600 14px Manrope,sans-serif;text-decoration:none}
+.btn-ghost:hover{background:rgba(201,163,92,.12);color:#EDE6DA}
+.navlink{color:#CFC6B8;text-decoration:none;font:500 14px Manrope,sans-serif}
+.navlink:hover{color:#EDE6DA}
+.tag{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(237,230,218,.2);color:#CFC6B8;text-decoration:none;font:500 14px Manrope,sans-serif}
+.tag:hover{border-color:#C9A35C;color:#EDE6DA}
+details{border-top:1px solid rgba(237,230,218,.14);padding:22px 0}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:24px;font:600 19px/1.4 Manrope,sans-serif;color:#EDE6DA}
+summary::-webkit-details-marker{display:none}
+.tg{color:#C9A35C;flex:none}
+.tg::before{content:"+"}
+details[open] .tg::before{content:"−"}
+input{font:500 16px Manrope,sans-serif}
+.rail{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-top:14px;margin-top:-14px;padding-bottom:28px;padding-left:3px;padding-right:3px;margin-left:-3px;margin-right:-3px;scroll-padding-left:3px;scroll-padding-right:3px;scrollbar-width:thin;scrollbar-color:#C9A35C rgba(237,230,218,.12)}
+.rail::-webkit-scrollbar{height:4px}
+.rail::-webkit-scrollbar-track{background:rgba(237,230,218,.12);border-radius:4px}
+.rail::-webkit-scrollbar-thumb{background:#C9A35C;border-radius:4px}
+.svc:hover p:first-child{color:#E2C489}
+.svc-call:hover{background:rgba(201,163,92,.12);color:#E2C489}
+.path{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:72px;position:relative}
+.path .st{position:relative}
+.path .num{position:relative;z-index:2;width:56px;height:56px;border-radius:999px;
+display:flex;align-items:center;justify-content:center;background:#17150F;
+border:1px solid rgba(201,163,92,.55);color:#C9A35C;font:500 22px 'Cormorant SC',serif}
+.path h3{margin:22px 0 0;font:600 21px/1.25 'Cormorant SC',serif;color:#EDE6DA}
+.path .sd{margin:8px 0 0;font:400 14px/1.6 Manrope,sans-serif;color:#A8A092;max-width:260px}
+.cta-row{margin-top:64px;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.cta-note{font:400 14px/1.6 Manrope,sans-serif;color:#8E8678;max-width:420px}
+.r-title{min-height:55px}
+@media (min-width:1025px){.paper-cta{grid-template-columns:repeat(3,1fr)!important}.call-note{grid-column:3}}
+@media (max-width:760px){.r-title{min-height:0}}
+@media (max-width:1024px){
+.path{grid-template-columns:1fr;gap:0;margin-top:48px}
+.path .st{display:grid;grid-template-columns:56px 1fr;column-gap:20px;padding-bottom:30px}
+.path .st:last-child{padding-bottom:0}
+.path .num{grid-row:1/3}
+.path h3{margin:12px 0 0}
+.path .sd{margin:6px 0 0;max-width:none;padding-bottom:4px}
+}
+h1,h2{letter-spacing:.03em}
+[style*="Cormorant SC"]{font-synthesis:none}
+.burger,.mbar,.callicon{display:none}
+@media (max-width: 1024px){.nav-desktop{display:none!important}.burger{display:inline-flex!important}}
+@media (max-width: 760px){
+section{padding-left:20px!important;padding-right:20px!important}
+header.glass{width:calc(100% - 24px)!important;top:12px!important;padding:10px 12px 10px 18px!important}
+.hdr-phone,.hdr-urgent{display:none!important}
+#top{min-height:700px!important}
+@media (prefers-reduced-motion:reduce){video.hero-img{animation:none}}.hero-img{width:100%!important;-webkit-mask-image:none!important;mask-image:none!important;opacity:.5}
+.hero-in{padding:140px 20px 64px!important}
+.hero-in p:last-child{line-height:1.7}
+#urgent{padding:18px!important;border-radius:20px!important}
+.paper{padding:22px 18px!important}
+.paper ol li{margin-right:0!important;padding-right:0!important}
+.cta-in{padding:40px 22px!important}
+.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important}
+.mbar{display:flex!important}
+.callicon{display:inline-flex!important}@media (max-width:379px){header.glass{padding:12px 14px 12px 18px!important;gap:10px!important;flex-wrap:nowrap!important}header.glass>a:first-child>span:first-child{font-size:20px!important;letter-spacing:.12em!important}header.glass>a:first-child>span:last-child{font-size:9px!important;letter-spacing:.14em!important}header.glass>div{gap:8px!important;flex-wrap:nowrap!important;flex:none!important}}
+footer{padding-bottom:96px!important}
+}
+
+</style>
+<style>html{scroll-behavior:smooth}</style>
+<style id="fix-steps">@media (max-width:760px){.steps-col{padding:0!important;flex-basis:100%!important}.steps-col>div{max-width:none!important}}.sitbtn{background:rgba(237,230,218,.05);border:1px solid rgba(237,230,218,.16);color:#EDE6DA;transition:background-color .22s ease,border-color .22s ease,color .22s ease}.sb-hint{color:#CFC6B8;transition:color .22s ease}.sb-icon{background:rgba(237,230,218,.08);transition:background-color .22s ease}.sitbtn[aria-selected="true"]{background:#C9A35C;border-color:#C9A35C;color:#14110D}.sitbtn[aria-selected="true"] .sb-hint{color:#3A2F1E}.sitbtn[aria-selected="true"] .sb-icon{background:rgba(20,17,13,.12)}.sitbtn:hover{border-color:rgba(201,163,92,.7)}a,button,.tag,.navlink,.svc,.svc-call{transition:color .2s ease,background-color .2s ease,border-color .2s ease,opacity .2s ease}@keyframes swIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.sw-in{animation:swIn .26s ease both}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}#cursorRing{position:fixed;top:0;left:0;width:34px;height:34px;margin:-17px 0 0 -17px;border:1px solid rgba(201,163,92,.75);border-radius:999px;pointer-events:none;z-index:9999;opacity:0;transform:translate3d(-100px,-100px,0) scale(.6);transition:opacity .18s ease,transform .18s ease,border-color .18s ease,width .18s ease,height .18s ease;will-change:transform}#cursorRing.on{opacity:1}#cursorRing.big{width:54px;height:54px;margin:-27px 0 0 -27px;border-color:rgba(226,196,137,.9)}@media (hover:none),(pointer:coarse){#cursorRing{display:none}}@media (prefers-reduced-motion:reduce){#cursorRing{display:none}}.htitle .hl{display:inline-block}.htitle.pre .hl{opacity:0}.htitle.go .hl{animation:hBlur .62s cubic-bezier(.22,.7,.28,1) both}.htitle.go .hl2{animation-delay:.16s}@keyframes hBlur{from{opacity:0;filter:blur(10px);transform:translateY(8px)}60%{opacity:1}to{opacity:1;filter:none;transform:none}}.htitle .hgold{color:#C9A35C}.htitle.pre .hgold,.htitle.go .hgold{color:#EDE6DA}.htitle.go .hgold{animation:hBlur .62s cubic-bezier(.22,.7,.28,1) .16s both,hGold 1.15s ease .72s forwards}@keyframes hGold{from{color:#EDE6DA}to{color:#C9A35C}}@media (prefers-reduced-motion:reduce){.htitle .hl{opacity:1!important;animation:none!important}.htitle .hgold{color:#C9A35C!important}}
+/* ===== STATES OF INTERACTIVE ELEMENTS ===== */
+/* arrows of the horizontal rails */
+.navbtn{width:52px;height:52px;border-radius:50%;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;
+transition:background-color .2s ease,border-color .2s ease,color .2s ease,opacity .25s ease,transform .12s ease}
+.navbtn-ghost{border:1px solid rgba(201,163,92,.7);background:transparent;color:#EDE6DA}
+.navbtn-ghost:hover{background:rgba(201,163,92,.14);border-color:#C9A35C}
+.navbtn-solid{border:0;background:#C9A35C;color:#14110D}
+.navbtn-solid:hover{background:#E2C489}
+.navbtn:active{transform:scale(.94)}
+.navbtn[disabled]{opacity:.3;cursor:default}
+.navbtn[disabled]:hover{background:transparent;border-color:rgba(201,163,92,.7)}
+.navbtn-solid[disabled]:hover{background:#C9A35C}
+/* logo */
+.logo span:first-child{transition:color .2s ease}
+.logo:hover span:first-child{color:#C9A35C}
+/* FAQ */
+summary{cursor:pointer;transition:color .2s ease}
+summary:hover{color:#C9A35C}
+/* form fields */
+input,textarea{transition:box-shadow .18s ease}
+input:hover,textarea:hover{box-shadow:0 0 0 1px rgba(237,230,218,.3)}
+input:focus-visible,textarea:focus-visible{outline:none;box-shadow:0 0 0 2px #C9A35C}
+/* keyboard focus — for everything */
+a:focus-visible,button:focus-visible,summary:focus-visible,[role=tab]:focus-visible{outline:2px solid #C9A35C;outline-offset:3px}
+/* pressed state — essential on mobile, where there is no hover */
+.btn-gold:active,.btn-ghost:active,.sitbtn:active,.svc-call:active{transform:scale(.97)}
+.btn-gold,.btn-ghost,.sitbtn,.svc-call{transition:color .2s ease,background-color .2s ease,border-color .2s ease,opacity .2s ease,transform .12s ease}
+@media (hover:none){
+.btn-gold:active{background:#E2C489}
+.btn-ghost:active,.svc-call:active{background:rgba(201,163,92,.18)}
+.navbtn-ghost:active{background:rgba(201,163,92,.18)}
+.navbtn-solid:active{background:#E2C489}
+.sitbtn:active{border-color:#C9A35C}
+summary:active{color:#C9A35C}
+}
+@media (prefers-reduced-motion:reduce){.navbtn:active,.btn-gold:active,.btn-ghost:active,.sitbtn:active,.svc-call:active{transform:none}}
+
+/* ===== SCROLL REVEAL ===== */
+.rv{opacity:0;transform:translateY(16px);
+transition:opacity .55s cubic-bezier(.22,.7,.28,1),transform .55s cubic-bezier(.22,.7,.28,1);
+transition-delay:var(--rvd,0ms);will-change:opacity,transform}
+.rv.rv-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important;transition:none!important}}
+
+/* ===== CARDS: HOVER ===== */
+#rail .svc,#team-list > article,#cases-list > article{
+transition:opacity .55s cubic-bezier(.22,.7,.28,1),transform .55s cubic-bezier(.22,.7,.28,1),
+translate .28s cubic-bezier(.22,.7,.28,1),border-color .25s ease;
+transition-delay:var(--rvd,0ms)}
+#rail .svc .ph,#team-list > article .ph{outline:1px solid transparent;transition:outline-color .25s ease}
+@media (hover:hover) and (pointer:fine){
+#rail .svc:hover,#team-list > article:hover,#cases-list > article:hover{translate:0 -6px}
+#rail .svc:hover .ph,#team-list > article:hover .ph{outline-color:rgba(201,163,92,.8)}
+#cases-list > article:hover{border-color:rgba(201,163,92,.75)}
+}
+@media (prefers-reduced-motion:reduce){
+#rail .svc:hover,#team-list > article:hover,#cases-list > article:hover{translate:none}
+}
+
+/* ===== RAILS: EDGE FADES ===== */
+.rail{--fadeL:0px;--fadeR:90px;
+-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 var(--fadeL),#000 calc(100% - var(--fadeR)),transparent 100%);
+mask-image:linear-gradient(90deg,transparent 0,#000 var(--fadeL),#000 calc(100% - var(--fadeR)),transparent 100%)}
+
+/* call button inside the rights panel */
+.paper-call{background:#14110D;color:#E2C489;
+transition:background-color .2s ease,color .2s ease,transform .12s ease}
+.paper-call:hover{background:#2A2219;color:#F3DEB0}
+.paper-call:active{transform:scale(.97)}
+@media (hover:none){.paper-call:active{background:#2A2219;color:#F3DEB0}}
+@media (prefers-reduced-motion:reduce){.paper-call:active{transform:none}}
+
+/* ===== FAQ: SMOOTH EXPANSION ===== */
+details.anim{transition:height .32s cubic-bezier(.22,.7,.28,1),
+opacity .55s cubic-bezier(.22,.7,.28,1),transform .55s cubic-bezier(.22,.7,.28,1);
+transition-delay:var(--rvd,0ms)}
+details.anim-run{overflow:hidden}
+details.anim summary{user-select:none}
+@media (prefers-reduced-motion:reduce){details.anim{transition:none}}
+
+/* ===== MENU ON TABLET AND MOBILE ===== */
+.mnav{display:none}
+.burger .ic-close{display:none}
+.burger[aria-expanded="true"] .ic-open{display:none}
+.burger[aria-expanded="true"] .ic-close{display:block}
+.burger[aria-expanded="true"]{border-color:#C9A35C;color:#C9A35C}
+.burger{transition:border-color .2s ease,color .2s ease,transform .12s ease}
+.burger:hover{border-color:rgba(201,163,92,.7)}
+.burger:active{transform:scale(.94)}
+@media (max-width:1024px){
+.mnav{position:absolute;top:calc(100% + 10px);left:0;right:0;z-index:6;
+display:flex;flex-direction:column;gap:2px;padding:10px;border-radius:24px;
+background:#16130F;border:1px solid rgba(237,230,218,.16);
+box-shadow:0 18px 48px rgba(0,0,0,.5);
+opacity:0;visibility:hidden;transform:translateY(-8px);
+transition:opacity .22s ease,transform .22s ease,visibility 0s .22s}
+.mnav.open{opacity:1;visibility:visible;transform:none;
+transition:opacity .22s ease,transform .22s ease,visibility 0s}
+.mnav a{padding:14px 18px;border-radius:16px;text-decoration:none;color:#EDE6DA;
+font:600 16px Manrope,sans-serif;transition:background-color .18s ease,color .18s ease}
+.mnav a:hover{background:rgba(201,163,92,.14);color:#C9A35C}
+.mnav a:active{background:rgba(201,163,92,.2);color:#C9A35C}
+}
+@media (prefers-reduced-motion:reduce){.mnav{transition:none}.mnav.open{transition:none}.burger:active{transform:none}}
+</style>
+</head>
+<body>
+<div style="position: relative; width: 100%; background: #0E0D0C; color: #EDE6DA; font-family: Manrope, sans-serif; overflow: hidden">
+
+<!-- HEADER -->
+<header class="glass" style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: 5; width: calc(100% - 40px); max-width: 1320px; border-radius: 999px; padding: 14px 20px 14px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" class="logo" style="display: flex; flex-direction: column; text-decoration: none; color: #EDE6DA">
+<span style="font: 700 24px/1 'Cormorant SC', serif; letter-spacing: .18em">VANGARDIS</span>
+<span style="font: 500 10px/1.6 Manrope, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: #A8A092">attorneys at law</span>
+</a>
+<nav class="nav-desktop" aria-label="Main menu" style="display: flex; flex-wrap: wrap; gap: 28px">
+<a class="navlink" href="#services">Services</a>
+<a class="navlink" href="#team">Team</a>
+<a class="navlink" href="#cases">Cases</a>
+<a class="navlink" href="#faq">FAQ</a>
+<a class="navlink" href="#contacts">Contacts</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap">
+<a class="btn-ghost hdr-urgent" href="tel:+380674082560" aria-label="Call the emergency line" style="gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A35C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>Emergency help 24/7</a>
+<a class="btn-gold callicon" href="tel:+380674082560" aria-label="Call an attorney" style="min-height: 44px; width: 44px; padding: 0"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg></a>
+<button type="button" class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mnav" style="width: 44px; height: 44px; border-radius: 14px; border: 1px solid rgba(237,230,218,.25); background: transparent; color: #EDE6DA; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="ic-open" d="M4 7h16M4 12h16M4 17h10"/><path class="ic-close" d="M6 6l12 12M18 6L6 18"/></svg></button>
+</div>
+<nav class="mnav" id="mnav" aria-label="Menu">
+<a href="#services">Services</a>
+<a href="#team">Team</a>
+<a href="#cases">Cases</a>
+<a href="#faq">FAQ</a>
+<a href="#contacts">Contacts</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="top" style="position: relative; min-height: 820px; display: flex; flex-direction: column; justify-content: flex-end">
+<div class="ph" style="position: absolute; inset: 0; background: radial-gradient(80% 70% at 75% 30%, #6a6359 0%, #34302b 38%, #151311 72%, #0E0D0C 100%)">
+<video class="photo hero-img" id="heroVid" poster="media/hero-poster.jpg" autoplay muted loop playsinline webkit-playsinline preload="auto" style="left: auto; right: 0; width: 62%; object-position: 60% 30%; filter: grayscale(1) contrast(1.1) brightness(.78); -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 35%); mask-image: linear-gradient(90deg, transparent 0%, #000 35%)"><source src="media/hero.mp4" type="video/mp4"><source src="media/hero.webm" type="video/webm"></video><script>(function(){var v=document.getElementById("heroVid");if(!v)return;v.muted=true;v.defaultMuted=true;var s=false;function go(){if(s)return;var p=v.play();if(p&&p.then){p.then(function(){s=true;off();}).catch(function(){});}else{s=true;off();}}var evs=["pointerdown","click","touchend","keydown","pointermove","scroll"];function off(){evs.forEach(function(e){document.removeEventListener(e,go,true);});}evs.forEach(function(e){document.addEventListener(e,go,{capture:true,passive:true});});v.addEventListener("loadeddata",go);v.addEventListener("canplay",go);document.addEventListener("visibilitychange",function(){if(!document.hidden)go();});go();})();</script>
+</div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,13,12,.85) 0%, rgba(14,13,12,.45) 45%, rgba(14,13,12,.1) 100%)"></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,13,12,.15) 0%, rgba(14,13,12,.2) 45%, rgba(14,13,12,.92) 82%, #0E0D0C 100%)"></div>
+
+<div class="hero-in" style="position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 180px 40px 96px">
+<p style="margin: 0 0 20px; font: 600 13px Manrope, sans-serif; letter-spacing: .24em; text-transform: uppercase; color: #C9A35C">Criminal defense attorneys · Kyiv</p>
+<h1 class="htitle" style="margin: 0; max-width: 640px; font: 500 clamp(44px, 5.6vw, 84px)/1.02 'Cormorant SC', serif; letter-spacing: .01em; color: #EDE6DA"><span class="hl hl1">Defense</span><br><span class="hl hl2 hgold">at your door</span></h1>
+<p style="margin: 32px 0 0; max-width: 560px; font: 400 19px/1.6 Manrope, sans-serif; color: #D6CDBF">We arrive during searches and arrests around the clock in Kyiv and the region. Online consultations across Ukraine.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px">
+<a class="btn-gold" href="tel:+380674082560" style="min-height: 58px">Call an attorney</a>
+<a class="btn-ghost" href="#urgent" style="min-height: 58px">What to do right now ↓</a>
+</div>
+<p style="margin: 28px 0 0; font: 500 13px Manrope, sans-serif; letter-spacing: .08em; color: #A8A092">Around the clock · We set out the moment you call · Kyiv and the region</p>
+</div>
+</section>
+
+<!-- SITUATION PANEL -->
+<section style="position: relative; max-width: 1320px; margin: 0 auto; padding: 72px 40px 0">
+<div id="urgent" class="glass" style="margin-top: 0; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<h2 style="margin: 0; font: 600 28px 'Cormorant SC', serif; color: #EDE6DA">What has happened?</h2>
+<p style="margin: 0; font: 500 14px Manrope, sans-serif; color: #CFC6B8">Pick your situation — an attorney will tell you what rights you have right now</p>
+</div>
+<div id="sit" role="tablist" aria-label="Situation" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+
+</div>
+
+<div class="paper" role="tabpanel"  style="position: relative; border-radius: 20px; background: #EDE6DA; color: #1A1714; padding: 32px 32px 28px; box-shadow: 0 30px 80px rgba(0,0,0,.45)">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 20px; padding-bottom: 24px; border-bottom: 1px solid rgba(26,23,20,.16)">
+<div style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 999px; background: #14110D; color: #E2C489; font: 700 12px Manrope, sans-serif; letter-spacing: .12em; text-transform: uppercase">
+<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.3 7.5 9.5 4.3-1.2 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>
+Free advice from an attorney</span>
+<h3 style="margin: 0; font: 600 clamp(26px, 2.6vw, 36px)/1.15 'Cormorant SC', serif; color: #1A1714"><span class="rtitle"></span></h3>
+<p style="margin: 0; font: 500 15px/1.5 Manrope, sans-serif; color: #5E554A">Knowing your rights is already half the defense. Here is what the law guarantees you right now.</p>
+</div>
+<div style="display: flex; align-items: center; gap: 12px">
+<div class="ph" style="width: 56px; height: 56px; flex: none; border-radius: 50%; border: 2px solid #C9A35C"><img loading="lazy" decoding="async" class="photo" src="images/situation-01.webp" alt="Iryna Levchenko" style="object-position: 50% 18%"></div>
+<div style="font: 500 13px/1.45 Manrope, sans-serif; color: #5E554A"><span style="display: block; font-weight: 700; color: #1A1714">Iryna Levchenko</span>attorney · searches and arrests<br>Bar certificate No. 6230, issued by<br>the Kyiv Bar Council on 15 May 2016</div>
+</div>
+</div>
+
+<ol id="rights" style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0">
+
+</ol>
+
+<div class="paper-cta" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 0; align-items: center; padding-top: 24px">
+<a href="tel:+380674082560" class="paper-call" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 28px; border-radius: 999px; font: 700 16px Manrope, sans-serif; text-decoration: none">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>
+Call an attorney</a>
+<p class="call-note" style="margin: 0; font: 500 13px/1.5 Manrope, sans-serif; color: #5E554A">The call is free — an attorney answers straight away.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- STATEMENT + NUMBERS -->
+<section style="max-width: 1320px; margin: 0 auto; padding: 120px 40px 120px">
+<div style="display: flex; flex-wrap: wrap; gap: 40px">
+<p style="flex: 1 1 260px; margin: 0; font: 600 13px/1.7 Manrope, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: #C9A35C">Straight talk</p>
+<p style="flex: 999 1 640px; margin: 0; font: 500 clamp(30px, 3.2vw, 46px)/1.2 'Cormorant SC', serif; color: #EDE6DA">No honest attorney can promise you the outcome of a case, and neither will we. <span style="color: #C9A35C">What we do promise is that no violation will go unnoticed.</span></p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 20px; margin-top: 80px">
+<div class="glass" style="border-radius: 20px; padding: 28px 24px; display: flex; flex-direction: column; gap: 18px">
+<span aria-hidden="true" style="display: inline-flex; width: 48px; height: 48px; align-items: center; justify-content: center; border-radius: 50%; background: rgba(201,163,92,.12); border: 1px solid rgba(201,163,92,.35); color: #C9A35C"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+<span style="display: flex; flex-direction: column; gap: 8px"><span style="font: 600 23px/1.2 'Cormorant SC', serif; color: #EDE6DA">Reachable around the clock</span><span style="font: 400 15px/1.55 Manrope, sans-serif; color: #A8A092">At night, on weekends and holidays — call any time something happens.</span></span>
+</div>
+<div class="glass" style="border-radius: 20px; padding: 28px 24px; display: flex; flex-direction: column; gap: 18px">
+<span aria-hidden="true" style="display: inline-flex; width: 48px; height: 48px; align-items: center; justify-content: center; border-radius: 50%; background: rgba(201,163,92,.12); border: 1px solid rgba(201,163,92,.35); color: #C9A35C"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg></span>
+<span style="display: flex; flex-direction: column; gap: 8px"><span style="font: 600 23px/1.2 'Cormorant SC', serif; color: #EDE6DA">First consultation</span><span style="font: 400 15px/1.55 Manrope, sans-serif; color: #A8A092">Free of charge: we assess the situation and explain what defense options you have.</span></span>
+</div>
+<div class="glass" style="border-radius: 20px; padding: 28px 24px; display: flex; flex-direction: column; gap: 18px">
+<span aria-hidden="true" style="display: inline-flex; width: 48px; height: 48px; align-items: center; justify-content: center; border-radius: 50%; background: rgba(201,163,92,.12); border: 1px solid rgba(201,163,92,.35); color: #C9A35C"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+<span style="display: flex; flex-direction: column; gap: 8px"><span style="font: 600 23px/1.2 'Cormorant SC', serif; color: #EDE6DA">Attorney–client privilege</span><span style="font: 400 15px/1.55 Manrope, sans-serif; color: #A8A092">Covers everything you tell us, from the first call onward.</span></span>
+</div>
+<div class="glass" style="border-radius: 20px; padding: 28px 24px; display: flex; flex-direction: column; gap: 18px">
+<span aria-hidden="true" style="display: inline-flex; width: 48px; height: 48px; align-items: center; justify-content: center; border-radius: 50%; background: rgba(201,163,92,.12); border: 1px solid rgba(201,163,92,.35); color: #C9A35C"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.3 7.5 9.5 4.3-1.2 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+<span style="display: flex; flex-direction: column; gap: 8px"><span style="font: 600 23px/1.2 'Cormorant SC', serif; color: #EDE6DA">12 years of practice</span><span style="font: 400 15px/1.55 Manrope, sans-serif; color: #A8A092">Over 400 cases: from the first search to the Supreme Court.</span></span>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="max-width: 1320px; margin: 0 auto; padding: 0 40px 140px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 20px">
+<h2 style="margin: 0; font: 600 clamp(40px, 4.6vw, 68px)/1.05 'Cormorant SC', serif">What we <span style="color: #C9A35C">handle</span></h2>
+<div style="display: flex; gap: 12px">
+<button type="button" aria-label="Previous services" id="railPrev" class="navbtn navbtn-ghost"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+<button type="button" aria-label="Next services" id="railNext" class="navbtn navbtn-solid"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+</div>
+<p style="margin: 0 0 40px; max-width: 640px; font: 400 17px/1.6 Manrope, sans-serif; color: #CFC6B8">Find your situation — and stop hunting for “the right” attorney: we assign the one who handles exactly these cases.</p>
+<div class="rail" id="rail" role="list">
+
+</div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" style="position: relative; overflow: hidden; background: #161412; padding: 140px 40px 120px">
+<div class="ph" style="position: absolute; inset: 0"><img loading="lazy" decoding="async" class="photo" src="images/process-01.webp" alt="" style="object-position: 60% 50%; filter: grayscale(1) contrast(1.05) brightness(.95)"></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,13,12,.86) 0%, rgba(14,13,12,.6) 55%, rgba(14,13,12,.3) 100%), linear-gradient(180deg, #0E0D0C 0%, rgba(14,13,12,0) 14%, rgba(14,13,12,0) 86%, #0E0D0C 100%)"></div>
+<div style="position: relative; max-width: 1320px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+<p style="flex: 1 1 220px; margin: 0; font: 600 13px Manrope, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: #C9A35C">How we work</p>
+<h2 style="flex: 999 1 640px; margin: 0; font: 500 clamp(28px, 2.9vw, 42px)/1.25 'Cormorant SC', serif; letter-spacing: .02em">From the first call to the decision in your case — four steps. <span style="color: #C9A35C">We walk through them with you and explain each one before we take it.</span></h2>
+</div>
+<div class="path">
+<div class="st"><span class="num" aria-hidden="true">01</span><h3>Call or request</h3><p class="sd">An attorney picks up straight away — not a secretary, not a chatbot.</p></div>
+<div class="st"><span class="num" aria-hidden="true">02</span><h3>First response</h3><p class="sd">We come to you, or advise on the spot. An honest read of the risks.</p></div>
+<div class="st"><span class="num" aria-hidden="true">03</span><h3>Engagement</h3><p class="sd">Stages and the price of each one. No surprises on the invoice.</p></div>
+<div class="st"><span class="num" aria-hidden="true">04</span><h3>Running the case</h3><p class="sd">A specialist attorney runs the case and reports after every step.</p></div>
+</div>
+<div class="cta-row">
+<a class="btn-gold" href="#contacts">Book a consultation</a>
+<span class="cta-note">The first consultation is free and commits you to nothing.</span>
+</div>
+</div>
+</section>
+
+<!-- TEAM -->
+<section id="team" style="max-width: 1320px; margin: 0 auto; padding: 140px 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px">
+<h2 style="margin: 0; font: 600 clamp(40px, 4.6vw, 68px)/1.05 'Cormorant SC', serif">The attorneys who will <span style="color: #C9A35C">run your case</span></h2>
+<div style="display: flex; gap: 12px; margin-left: auto">
+<button type="button" aria-label="Previous attorneys" id="teamPrev" class="navbtn navbtn-ghost"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+<button type="button" aria-label="Next attorneys" id="teamNext" class="navbtn navbtn-solid"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+</div>
+<div class="rail" id="team-list" role="list">
+
+</div>
+</section>
+
+<!-- CASES -->
+<section id="cases" style="position: relative; padding: 140px 40px">
+<div class="ph" style="position: absolute; inset: 0; background: radial-gradient(70% 80% at 50% 40%, #4f4a43 0%, #26231f 50%, #0E0D0C 100%)"><img loading="lazy" decoding="async" class="photo" src="images/cases-01.webp" alt=""></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, #0E0D0C 0%, rgba(14,13,12,.35) 30%, rgba(14,13,12,.35) 70%, #0E0D0C 100%)"></div>
+<div style="position: relative; max-width: 1320px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px">
+<div><h2 style="margin: 0; font: 600 clamp(40px, 4.6vw, 68px)/1.05 'Cormorant SC', serif">Cases <span style="color: #C9A35C">we have handled</span></h2>
+<p style="margin: 14px 0 0; max-width: 560px; font: 400 17px/1.6 Manrope, sans-serif; color: #CFC6B8">Real cases from our practice — without names or details that could identify a client.</p></div>
+<div style="display: flex; gap: 12px; margin-left: auto">
+<button type="button" aria-label="Previous cases" id="casesPrev" class="navbtn navbtn-ghost"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+<button type="button" aria-label="Next cases" id="casesNext" class="navbtn navbtn-solid"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+</div>
+<div class="rail" id="cases-list" role="list" style="align-items: stretch">
+</div>
+<p style="margin: 24px 0 0; font: 400 13px Manrope, sans-serif; color: #A8A092">Cases are anonymised and published with client consent. Past results do not guarantee the same outcome in your case.</p>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="max-width: 1320px; margin: 0 auto; padding: 140px 40px; display: flex; flex-wrap: wrap; gap: 56px">
+<h2 style="flex: 1 1 320px; margin: 0; font: 600 clamp(40px, 4.6vw, 64px)/1.05 'Cormorant SC', serif">Frequently asked <span style="color: #C9A35C">questions</span></h2>
+<div style="flex: 999 1 640px; min-width: 0">
+<details open><summary>How much does an attorney cost?<span class="tg" aria-hidden="true"></span></summary><p style="margin: 14px 0 0; font: 400 16px/1.65 Manrope, sans-serif; color: #CFC6B8">Attending a search or an arrest starts at UAH 8,000; a consultation starts at UAH 2,000. The fee for running a case is quoted after the first consultation and fixed in the engagement letter.</p></details>
+<details><summary>Can I hire an attorney for a relative?<span class="tg" aria-hidden="true"></span></summary><p style="margin: 14px 0 0; font: 400 16px/1.65 Manrope, sans-serif; color: #CFC6B8">Yes. A family member can sign the engagement, and the client confirms it afterwards.</p></details>
+<details><summary>I already have a state-appointed attorney. Can I replace them?<span class="tg" aria-hidden="true"></span></summary><p style="margin: 14px 0 0; font: 400 16px/1.65 Manrope, sans-serif; color: #CFC6B8">You have the right to bring in a defense attorney of your own choosing at any moment.</p></details>
+<details><summary>Do you work outside Kyiv?<span class="tg" aria-hidden="true"></span></summary><p style="margin: 14px 0 0; font: 400 16px/1.65 Manrope, sans-serif; color: #CFC6B8">We travel across the Kyiv region. Elsewhere — online, and in person by arrangement.</p></details>
+<details style="border-bottom: 1px solid rgba(237,230,218,.14)"><summary>Who will know that I contacted you?<span class="tg" aria-hidden="true"></span></summary><p style="margin: 14px 0 0; font: 400 16px/1.65 Manrope, sans-serif; color: #CFC6B8">No one. The very fact that you contacted an attorney is privileged.</p></details>
+</div>
+</section>
+
+<!-- CTA + FOOTER -->
+<section id="contacts" style="padding: 0 40px 24px">
+<div style="position: relative; max-width: 1320px; margin: 0 auto; border-radius: 20px; overflow: hidden">
+<div class="ph" style="position: absolute; inset: 0; background: radial-gradient(70% 90% at 80% 40%, #5f584f 0%, #2c2824 50%, #121110 100%)"><img loading="lazy" decoding="async" class="photo" src="images/faq-01.webp" alt=""></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,13,12,.9) 0%, rgba(14,13,12,.55) 55%, rgba(14,13,12,.35) 100%)"></div>
+<div class="cta-in" style="position: relative; padding: 72px 56px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 420px; min-width: 0">
+<h2 style="margin: 0; font: 600 clamp(36px, 4vw, 56px)/1.1 'Cormorant SC', serif">Not sure whether you need an attorney? <span style="color: #C9A35C">Call.</span></h2>
+<p style="margin: 20px 0 0; max-width: 440px; font: 400 17px/1.6 Manrope, sans-serif; color: #D6CDBF">It commits you to nothing. The first consultation is free.</p>
+<a class="btn-gold" href="tel:+380674082560" style="margin-top: 32px">+38 (067) 408-25-60</a>
+</div>
+<form class="glass" id="cbForm" style="flex: 1 1 min(380px, 100%); min-width: 0; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font: 600 22px 'Cormorant SC', serif">Request a call back</p>
+<label style="display: flex; flex-direction: column; gap: 8px; font: 600 13px Manrope, sans-serif; color: #CFC6B8">Your name
+<input type="text" name="name" autocomplete="name" style="min-height: 52px; padding: 0 16px; border-radius: 14px; border: 1px solid rgba(237,230,218,.22); background: rgba(14,13,12,.5); color: #EDE6DA"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font: 600 13px Manrope, sans-serif; color: #CFC6B8">A number you can take a call on
+<input type="tel" name="phone" autocomplete="tel" required aria-required="true" placeholder="+380 XX XXX XX XX" style="min-height: 52px; padding: 0 16px; border-radius: 14px; border: 1px solid rgba(237,230,218,.22); background: rgba(14,13,12,.5); color: #EDE6DA"></label>
+<label style="display: flex; gap: 12px; align-items: flex-start; font: 400 13px/1.5 Manrope, sans-serif; color: #CFC6B8; cursor: pointer"><input type="checkbox" id="consent" style="width: 20px; height: 20px; margin: 0; flex: none; accent-color: #C9A35C"><span>I consent to my personal data being processed for the purpose of a call back, in line with the <a href="privacy.html" target="_blank" rel="noopener">privacy policy</a></span></label>
+<button type="button" class="btn-gold" id="cbSend" style="width: 100%">Call me back</button>
+<p style="margin: 0; font: 400 12px/1.5 Manrope, sans-serif; color: #A8A092">Only an attorney sees this. Case details are better discussed by phone.</p>
+</form>
+</div>
+</div>
+
+<footer style="max-width: 1320px; margin: 0 auto; padding: 48px 0 28px; border-top: 1px solid rgba(237,230,218,.16); margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 36px; font: 400 14px/1.7 Manrope, sans-serif; color: #A8A092">
+<div><p style="margin: 0; font: 700 22px/1 'Cormorant SC', serif; letter-spacing: .18em; color: #EDE6DA">VANGARDIS</p><p style="margin: 12px 0 0">Attorneys at law<br>Vangardis Law Firm · Reg. No. 41234567</p></div>
+<div><p style="font: 600 12px Manrope, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: #C9A35C; margin: 0 0 12px">Contacts</p><a href="tel:+380674082560" style="display:flex;align-items:center;gap:12px;margin:0 0 10px;text-decoration:none;color:#EDE6DA;font:600 17px Manrope, sans-serif"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A35C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg><span>+38 (067) 408-25-60</span><span style="color:#A8A092;font:400 13px Manrope, sans-serif">24/7</span></a><a href="https://t.me/+380674082560" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:12px;margin:0 0 10px;text-decoration:none;color:#CFC6B8;font:400 15px Manrope, sans-serif"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A35C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="m21.5 3.5-19 7.3 6.8 2.6 2.6 6.9z"/><path d="M9.3 13.4 21.5 3.5"/></svg><span>+38 (067) 408-25-60</span><span style="color:#A8A092;font:400 13px Manrope, sans-serif">Telegram</span></a><a href="viber://chat?number=%2B380674082560" style="display:flex;align-items:center;gap:12px;margin:0 0 10px;text-decoration:none;color:#CFC6B8;font:400 15px Manrope, sans-serif"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A35C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M12 3c5 0 9 3.4 9 8s-4 8-9 8c-1 0-2-.1-3-.4L4 21l1.4-4A7.6 7.6 0 0 1 3 11c0-4.6 4-8 9-8Z"/><path d="M9.6 8.2h1l.8 2-.8.7a4 4 0 0 0 2.5 2.5l.7-.8 2 .8v1a1 1 0 0 1-1 1 5.6 5.6 0 0 1-6.2-6.2 1 1 0 0 1 1-1Z"/></svg><span>+38 (067) 408-25-60</span><span style="color:#A8A092;font:400 13px Manrope, sans-serif">Viber</span></a><a href="mailto:office@vangardis.ua" style="display:flex;align-items:center;gap:12px;margin:0 0 10px;text-decoration:none;color:#CFC6B8;font:400 15px Manrope, sans-serif"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A35C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg><span>office@vangardis.ua</span></a></div>
+<div><p style="font: 600 12px Manrope, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: #C9A35C; margin: 0 0 12px">Office</p><p style="margin: 0; color: #CFC6B8">72 Velyka Vasylkivska St, office 14, Kyiv<br>Mon–Fri 9:00–19:00, by appointment</p></div>
+<div><p style="font: 600 12px Manrope, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: #C9A35C; margin: 0 0 12px">Documents</p><p style="margin: 0"><a href="privacy.html" style="color: #CFC6B8; text-decoration: none">Privacy policy</a></p><p style="margin: 0">Information on this website is not legal advice.</p><p style="margin: 12px 0 0; font: 400 12px/1.6 Manrope, sans-serif; color: #8E867A">Photography — <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" style="color:#A8A092">Unsplash</a>.</p></div>
+</footer>
+</section>
+
+<!-- MOBILE CALL BAR -->
+<div class="mbar" style="position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 20; gap: 10px">
+<a class="btn-gold" href="tel:+380674082560" style="flex: 1; min-height: 54px">Call now</a>
+<a class="btn-ghost" href="#urgent" style="flex: 1; min-height: 54px; background: rgba(14,13,12,.88)">What to do?</a>
+</div>
+
+</div>
+<script>
+var data = [
+      { id: "search", label: "A search is underway", hint: "An attorney comes 24/7", title: "Your rights during a search", rights: [
+        { right: "Receive a copy of the court order", action: "A copy must be handed to you before the search begins. Check the address, the list of items being sought and the date the order expires." },
+        { right: "Give no explanations", action: "Art. 63 of the Constitution of Ukraine: you need not testify against yourself or close relatives. Say you are waiting for your attorney." },
+        { right: "Record objections in the protocol", action: "Do not sign anything unread. Put every violation in writing — from the seizure of items not listed to pressure placed on you." }] },
+      { id: "detain", label: "Someone close was arrested", hint: "We find them and get access", title: "A detainee\u2019s rights \u2014 and what you should do", rights: [
+        { right: "A defense attorney from the moment of arrest", action: "A detainee cannot be denied an attorney. We will secure access and be present at every investigative action." },
+        { right: "Know where the person is held", action: "Relatives must be notified of an arrest. Record who made it, at what time, and where the person was taken." },
+        { right: "Stay silent until the attorney arrives", action: "Neither the detainee nor you are obliged to give explanations. Tell the attorney everything you know about the arrest." }] },
+      { id: "call", label: "Summoned for questioning", hint: "We prepare you and come along", title: "Your rights before questioning", rights: [
+        { right: "Know your status", action: "Check the summons: are you called as a witness or as a suspect? Both your rights and the defense strategy depend on it." },
+        { right: "Attend with an attorney", action: "Even a witness has the right to legal assistance. Nobody walks into questioning unprepared — the position is agreed beforehand." },
+        { right: "Not testify against yourself or family", action: "Art. 63 of the Constitution of Ukraine applies during questioning too: you may decline to answer anything that could harm you." }] },
+      { id: "suspect", label: "Notified of suspicion", hint: "This is not a verdict yet", title: "Your rights after a notice of suspicion", rights: [
+        { right: "Receive a copy of the notice", action: "The copy is served on the day it is drawn up, against signature. Check the date and time — the investigation deadlines run from them." },
+        { right: "A defense attorney", action: "Give no statements before speaking to an attorney — even if you are promised leniency or a quick closure of the case." },
+        { right: "Take part in the custody hearing", action: "This is the most important moment of the case. The attorney must be there, with documents and guarantors prepared in advance." }] }
+    ];
+var team = [
+      { name: "Oleksandr Rudenko", cert: "Bar certificate No. 4521, issued by the Kyiv Bar Council on 18 April 2013", img: "images/team-01.webp", role: "Managing partner \u00b7 business defense, corruption cases", since: "Attorney since 2013", photo: "man, 45, dark suit, b/w, side light" },
+      { name: "Iryna Levchenko", cert: "Bar certificate No. 6230, issued by the Kyiv Bar Council on 15 May 2016", img: "images/situation-01.webp", role: "Searches and arrests, pre-trial restraint", since: "Attorney since 2016", photo: "woman, 38, coat, b/w" },
+      { name: "Maksym Hordiienko", cert: "Bar certificate No. 5817, issued by the Kyiv Region Bar Council on 2 September 2015", img: "images/team-02.webp", role: "Military criminal cases", since: "Attorney since 2015", photo: "man, 40, sweater, b/w" },
+      { name: "Daryna Koval", cert: "Bar certificate No. 7104, issued by the Kyiv Bar Council on 23 March 2018", img: "images/team-03.webp", role: "Road accidents, representing victims", since: "Attorney since 2018", photo: "woman, 32, blazer, b/w" },
+      { name: "Andrii Melnyk", cert: "Bar certificate No. 5093, issued by the Kyiv Bar Council on 11 November 2014", img: "images/team-04.webp", role: "Appeals, cassation, applications to the ECtHR", since: "Attorney since 2014", photo: "" },
+      { name: "Olena Savchuk", cert: "Bar certificate No. 6688, issued by the Kyiv Region Bar Council on 7 June 2017", img: "images/team-05.webp", role: "Administrative cases, damage claims", since: "Attorney since 2017", photo: "" }
+    ];
+var cases = [
+      { n: "01", year: "2024", tag: "Search \u00b7 business", title: "Search at a farming business", result: "Equipment returned in 9 days", situation: "At 6:30 a.m. a search began in a tax evasion case.", done: "The attorney arrived and recorded the seizure of equipment not listed in the court order. A motion was filed with the investigating judge.", meta: "Kyiv region \u00b7 Art. 212 of the Criminal Code of Ukraine" },
+      { n: "02", year: "2023", tag: "Road accident", title: "Driver notified of suspicion after a crash", result: "Proceedings closed", situation: "The client was notified of suspicion over a crash with an injured party.", done: "We obtained a second vehicle examination, which established that the other driver was at fault.", meta: "Kyiv \u00b7 Art. 286 of the Criminal Code of Ukraine" },
+      { n: "03", year: "2025", tag: "Pre-trial restraint", title: "House arrest instead of custody", result: "Night-time house arrest instead of pre-trial detention", situation: "The prosecutor asked for detention with no right to bail.", done: "Overnight we gathered documents on family, employment, references and personal guarantees.", meta: "Kyiv \u00b7 pre-trial restraint" },
+      { n: "04", year: "2025", tag: "Military case", title: "Absence without leave", result: "Released from liability after returning to service", situation: "A serviceman was notified of suspicion under Art. 407 of the Criminal Code of Ukraine.", done: "We prepared evidence of valid reasons and accompanied his return to the unit.", meta: "Zhytomyr \u00b7 Art. 407 of the Criminal Code of Ukraine" },
+      { n: "05", year: "2024", tag: "Damage claim", title: "Search carried out at the wrong address", result: "Court awarded compensation from the state", situation: "During a search at the wrong address, the door and equipment were damaged.", done: "We challenged the investigator\u2019s actions and filed a claim for damages.", meta: "Brovary \u00b7 damage claim" }
+    ];
+var C = "Criminal case", S = "Related service";
+var services = [
+      { kind: C, price: "from UAH 8,000", when: "A search is underway", title: "Searches and arrests", img: "images/service-01.webp", text: "On site around the clock. We check the lawfulness of every action and enter objections into the protocol.", photo: "entrance door at night, street lamp, b/w", light: "30% 25%" },
+      { kind: C, price: "from UAH 15,000", when: "Notified of suspicion", title: "Defending a suspect", img: "images/service-02.webp", text: "We build the defense from day one: from pre-trial restraint through to trial.", photo: "empty institutional corridor, lamps, b/w", light: "60% 20%" },
+      { kind: C, price: "from UAH 25,000", when: "An inspection at your company", title: "Protecting a business", img: "images/service-03.webp", text: "Economic-crime and anti-corruption inspections. Defending executives in tax and commercial cases.", photo: "office, folders on the desk, light through blinds", light: "70% 30%" },
+      { kind: C, price: "from UAH 10,000", when: "The case concerns military service", title: "Military cases", img: "images/service-04.jpg", text: "Absence without leave, insubordination, conflicts with command. No judgement, just the options.", photo: "military dog tag on a wooden table, b/w", light: "45% 35%" },
+      { kind: C, price: "from UAH 12,000", when: "A road accident happened", title: "Road accidents with injuries", img: "images/service-05.webp", text: "Defending drivers: examinations, settlements, compensation.", photo: "wet asphalt at night, headlight reflections, fog", light: "50% 20%" },
+      { kind: C, price: "from UAH 30,000", when: "Summoned by NABU", title: "Corruption cases", img: "images/service-06.webp", text: "NABU and HACC proceedings: audio surveillance, expert examinations, heavy bail.", photo: "columns of a government building from below, b/w", light: "40% 15%" },
+      { kind: C, price: "from UAH 8,000", when: "I am the injured party", title: "Representing victims", img: "images/service-07.webp", text: "We make sure the case is actually investigated and the damage is actually compensated.", photo: "woman by a window from behind, rain, b/w", light: "75% 25%" },
+      { kind: C, price: "from UAH 15,000", when: "The case is already in court", title: "Appeal and cassation", img: "images/service-08.webp", text: "We step in after another attorney. Within 5 working days we tell you whether there are grounds.", photo: "stack of case volumes tied with twine, b/w", light: "35% 30%" },
+      { kind: S, price: "from UAH 5,000", when: "A drink-driving charge", title: "Administrative cases", img: "images/service-09.webp", text: "We challenge police reports and rulings, and defend you in court.", photo: "steering wheel at night, city lights, b/w", light: "55% 30%" },
+      { kind: S, price: "from UAH 5,000", when: "Trouble with the enlistment office", title: "Military law", img: "images/service-10.webp", text: "Deferrals, appeals against enlistment and medical board decisions, servicemen\u2019s rights.", photo: "greatcoat on a hook, backlight", light: "65% 20%" },
+      { kind: S, price: "from UAH 10,000", when: "The case was closed", title: "Claiming damages", img: "images/service-11.webp", text: "Compensation for unlawful detention, search or prosecution.", photo: "key and an open door, light from outside", light: "40% 40%" },
+      { kind: S, price: "from UAH 20,000", when: "All instances exhausted", title: "Applications to the ECtHR", img: "images/service-12.webp", text: "We prepare an application to the European Court of Human Rights.", photo: "old writing desk, a letter, b/w", light: "50% 25%" }
+    ];
+var picked = "search";
+function render() {
+  var sit = data.map(function (d) {
+    var on = d.id === picked;
+    var s = { id: d.id, label: d.label, hint: d.hint, selected: on ? "true" : "false",
+      isSearch: d.id === "search", isDetain: d.id === "detain", isCall: d.id === "call", isSuspect: d.id === "suspect",
+      bg: on ? "#C9A35C" : "rgba(237,230,218,.05)", border: on ? "#C9A35C" : "rgba(237,230,218,.16)",
+      fg: on ? "#14110D" : "#EDE6DA", sub: on ? "#3A2F1E" : "#CFC6B8", iconBg: on ? "rgba(20,17,13,.12)" : "rgba(237,230,218,.08)" };
+    return `
+<button class="sitbtn" role="tab" aria-selected="${s.selected}" data-id="${s.id}" style="display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 14px 18px; border-radius: 14px; text-align: left; cursor: pointer">
+<span class="sb-icon" aria-hidden="true" style="display: inline-flex; width: 44px; height: 44px; flex: none; align-items: center; justify-content: center; border-radius: 999px">
+${s.isSearch?'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4a1 1 0 0 1 1-1h10l4 4v14"/><path d="M14 3v5h5"/><path d="M8 12h6M8 16h4"/></svg>':''}
+${s.isDetain?'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10 18h4"/><circle cx="12" cy="10" r="3"/><path d="M12 8.6V10l1 .8"/></svg>':''}
+${s.isCall?'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>':''}
+${s.isSuspect?'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.3 7.5 9.5 4.3-1.2 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>':''}
+</span>
+<span style="display: flex; flex-direction: column; gap: 3px">
+<span style="font: 700 16px Manrope, sans-serif">${s.label}</span>
+<span class="sb-hint" style="font: 500 13px Manrope, sans-serif">${s.hint}</span>
+</span>
+</button>
+`;
+  }).join("");
+  var sitEl = document.getElementById("sit");
+  if (!sitEl.firstElementChild) {
+    sitEl.innerHTML = sit;
+    sitEl.querySelectorAll("[data-id]").forEach(function (b) {
+      b.addEventListener("click", function () { picked = b.getAttribute("data-id"); render(); });
+    });
+  } else {
+    sitEl.querySelectorAll("[data-id]").forEach(function (b) {
+      b.setAttribute("aria-selected", b.getAttribute("data-id") === picked ? "true" : "false");
+    });
+  }
+  var cur = data.filter(function (d) { return d.id === picked; })[0];
+  var rightsEl = document.getElementById("rights");
+  rightsEl.innerHTML = cur.rights.map(function (x, i) {
+    var r = { n: "0" + (i + 1), right: x.right, action: x.action };
+    return `
+<li style="display: flex; flex-direction: column; gap: 10px; padding: 26px 24px 22px 0; margin-right: 24px; border-bottom: 1px solid rgba(26,23,20,.1)">
+<span style="display: flex; align-items: center; gap: 10px; font: 700 12px Manrope, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #6E5320">
+<span style="font: 600 22px/1 'Cormorant SC', serif; letter-spacing: 0">${r.n}</span>You have the right</span>
+<span class="r-title" style="font: 600 21px/1.3 'Cormorant SC', serif; color: #1A1714">${r.right}</span>
+<span style="font: 500 15px/1.55 Manrope, sans-serif; color: #4A433A">${r.action}</span>
+</li>
+`;
+  }).join("");
+  document.querySelectorAll(".rtitle").forEach(function (el) { el.textContent = cur.title; });
+  [rightsEl].concat([].slice.call(document.querySelectorAll(".rtitle"))).forEach(function (el) {
+    el.classList.remove("sw-in"); void el.offsetWidth; el.classList.add("sw-in");
+  });
+}
+document.getElementById("rail").innerHTML = services.map(function (sv) { return `
+<div role="listitem" class="svc" style="flex: 0 0 clamp(280px, 28vw, 360px); scroll-snap-align: start; text-decoration: none; color: #EDE6DA; display: flex; flex-direction: column; gap: 18px">
+<div class="ph" style="aspect-ratio: 4 / 5; border-radius: 20px; background: radial-gradient(90% 70% at ${sv.light}, #5f584f 0%, #2b2723 50%, #121110 100%)">
+<img loading="lazy" decoding="async" class="photo" src="${sv.img}" alt="">
+<span class="glass" style="position: absolute; top: 16px; left: 16px; right: 16px; border-radius: 14px; padding: 10px 14px; font: 600 13px/1.4 Manrope, sans-serif; color: #EDE6DA"><span style="display: block; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #E2C489">${sv.kind}</span>${sv.when}</span>
+</div>
+<div>
+<p style="margin: 0; font: 600 26px/1.2 'Cormorant SC', serif">${sv.title}</p>
+<p style="margin: 8px 0 0; font: 400 15px/1.55 Manrope, sans-serif; color: #A8A092">${sv.text}</p>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(237,230,218,.16)"><span style="font: 600 22px 'Cormorant SC', serif; color: #EDE6DA">${sv.price}</span><a class="svc-call" href="tel:+380674082560" aria-label="Call an attorney — ${sv.title}" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex: none; border-radius: 999px; border: 1px solid rgba(201,163,92,.7); color: #C9A35C; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg></a></div>
+</div>
+</div>
+`; }).join("");
+document.getElementById("team-list").innerHTML = team.map(function (m) { return `
+<article role="listitem" style="flex: 0 0 clamp(260px, 22vw, 280px); scroll-snap-align: start; display: flex; flex-direction: column; gap: 16px">
+<div class="ph" style="aspect-ratio: 3 / 4; border-radius: 20px; background: radial-gradient(70% 60% at 50% 35%, #5c564d 0%, #2a2622 55%, #121110 100%)"><img loading="lazy" decoding="async" class="photo" src="${m.img}" alt=""></div>
+<div>
+<p style="margin: 0; font: 600 22px 'Cormorant SC', serif">${m.name}</p>
+<p style="margin: 6px 0 0; font: 500 14px/1.5 Manrope, sans-serif; color: #CFC6B8">${m.role}</p>
+<p style="margin: 8px 0 0; font: 500 12px Manrope, sans-serif; letter-spacing: .06em; color: #A8A092">${m.since}</p>
+<p style="margin: 5px 0 0; font: 400 11px/1.5 Manrope, sans-serif; color: #8E8678">${m.cert}</p>
+</div>
+</article>
+`; }).join("");
+document.getElementById("cases-list").innerHTML = cases.map(function (c) { return `
+<article role="listitem" class="glass" style="flex: 0 0 clamp(300px, 36vw, 500px); scroll-snap-align: start; border-radius: 20px; padding: clamp(22px, 2.6vw, 34px); display: flex; flex-direction: column; gap: 18px; -webkit-backdrop-filter: blur(28px); backdrop-filter: blur(28px)">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: #C9A35C; border-radius: 999px; font: 700 11px Manrope, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #14110D; white-space: nowrap"><span style="width: 6px; height: 6px; border-radius: 50%; background: #14110D"></span>${c.tag}</span>
+<span style="font: 500 14px Manrope, sans-serif; color: #CFC6B8">${c.year}</span>
+</div>
+<p class="c-title" style="margin: 0; font: 600 clamp(24px, 2.2vw, 28px)/1.15 'Cormorant SC', serif; color: #EDE6DA">${c.title}</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div class="c-sit" style="background: rgba(237,230,218,.05); border: 1px solid rgba(237,230,218,.16); border-radius: 14px; padding: 16px 18px; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px)">
+<p style="margin: 0 0 6px; font: 600 11px Manrope, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: #A8A092">Situation</p>
+<p style="margin: 0; font: 400 15px/1.55 Manrope, sans-serif; color: #D6CDBF">${c.situation}</p></div>
+<div class="c-done" style="background: rgba(237,230,218,.05); border: 1px solid rgba(237,230,218,.16); border-radius: 14px; padding: 16px 18px; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px)">
+<p style="margin: 0 0 6px; font: 600 11px Manrope, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: #A8A092">What we did</p>
+<p style="margin: 0; font: 400 15px/1.55 Manrope, sans-serif; color: #D6CDBF">${c.done}</p></div>
+<div class="c-res" style="background: rgba(237,230,218,.05); border: 1px solid rgba(237,230,218,.16); border-radius: 14px; padding: 16px 18px; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px)">
+<p style="margin: 0 0 6px; font: 600 11px Manrope, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: #C9A35C">Outcome</p>
+<p style="margin: 0; font: 600 15px/1.55 Manrope, sans-serif; color: #EDE6DA">${c.result}</p></div>
+</div>
+<p style="margin: auto 0 0; font: 400 13px Manrope, sans-serif; color: #A8A092">${c.meta}</p>
+</article>
+`; }).join("");
+function eqCases() { [".c-title", ".c-sit", ".c-done", ".c-res"].forEach(function (sel) { var els = document.querySelectorAll("#cases-list " + sel), m = 0;
+  els.forEach(function (e) { e.style.minHeight = ""; }); els.forEach(function (e) { m = Math.max(m, e.getBoundingClientRect().height); }); els.forEach(function (e) { e.style.minHeight = m + "px"; }); }); }
+eqCases(); window.addEventListener("resize", eqCases); if (document.fonts) document.fonts.ready.then(eqCases);
+document.getElementById("railNext").addEventListener("click", function () { document.getElementById("rail").scrollBy({ left: 384, behavior: "smooth" }); });
+document.getElementById("railPrev").addEventListener("click", function () { document.getElementById("rail").scrollBy({ left: -384, behavior: "smooth" }); });
+function railBtn(p, id) { var r = document.getElementById(id); var step = function () { var c = r.firstElementChild; return c ? c.getBoundingClientRect().width + 24 : 320; };
+  document.getElementById(p + "Next").addEventListener("click", function () { r.scrollBy({ left: step(), behavior: "smooth" }); });
+  document.getElementById(p + "Prev").addEventListener("click", function () { r.scrollBy({ left: -step(), behavior: "smooth" }); }); }
+railBtn("team", "team-list"); railBtn("cases", "cases-list");
+(function () { var f = document.getElementById("cbForm"), b = document.getElementById("cbSend"), c = document.getElementById("consent");
+  var sync = function () { b.disabled = !c.checked; b.style.opacity = c.checked ? "1" : ".45"; b.style.cursor = c.checked ? "pointer" : "not-allowed"; };
+  c.addEventListener("change", sync); sync();
+  b.addEventListener("click", function () { if (!c.checked) return;
+      var tel = f.querySelector('input[name="phone"]');
+      var raw = (tel.value || "").trim();
+      var err = document.getElementById("cbErr");
+      if (!err) { err = document.createElement("p"); err.id = "cbErr"; err.setAttribute("role","alert");
+        err.style.cssText = "margin:-4px 0 0;font:500 13px/1.5 Manrope,sans-serif;color:#E2956C";
+        tel.closest("label").insertAdjacentElement("afterend", err); }
+      if (raw.replace(/\D/g, "").length < 9) {
+        err.textContent = "Please enter a phone number — without it an attorney cannot call you back.";
+        tel.style.borderColor = "#E2956C";
+        tel.focus(); return;
+      }
+      err.textContent = ""; tel.style.borderColor = "";
+      var n = (f.querySelector('input[name="name"]').value || "").trim(), ph = raw;
+    f.style.justifyContent = "center"; f.style.alignItems = "center"; f.style.textAlign = "center"; f.style.minHeight = f.offsetHeight + "px";
+    f.innerHTML = '<span style="display:inline-flex;width:64px;height:64px;border-radius:50%;align-items:center;justify-content:center;background:rgba(201,163,92,.14);border:1px solid #C9A35C"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A35C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>'
+      + '<p style="margin:0;font:600 28px \'Cormorant SC\', serif;color:#EDE6DA">Thank you' + (n ? ", " + n.replace(/[<>&]/g, "") : "") + '</p>'
+      + '<p style="margin:0;font:400 15px/1.55 Manrope, sans-serif;color:#CFC6B8">An attorney will call you back on ' + ph.replace(/[<>&]/g, "") + ' shortly. If the situation is urgent, call the emergency line.</p>'
+      + '<a href="tel:+380674082560" style="font:600 17px Manrope, sans-serif;color:#C9A35C;text-decoration:none">+38 (067) 408-25-60</a>'; }); })();
+render();
+</script>
+<div id="cursorRing" aria-hidden="true"></div>
+<script>(function(){
+ if(!window.matchMedia||!matchMedia("(hover:hover) and (pointer:fine)").matches) return;
+ if(matchMedia("(prefers-reduced-motion:reduce)").matches) return;
+ var r=document.getElementById("cursorRing"); if(!r) return;
+ var tx=0,ty=0,cx=0,cy=0,on=false,raf=0;
+ var SEL="a,button,[role=tab],.svc,.tag,input,textarea,label,summary";
+ function loop(){ cx+=(tx-cx)*0.18; cy+=(ty-cy)*0.18;
+   r.style.transform="translate3d("+cx.toFixed(1)+"px,"+cy.toFixed(1)+"px,0)";
+   raf=requestAnimationFrame(loop); }
+ document.addEventListener("pointermove",function(e){
+   if(e.pointerType&&e.pointerType!=="mouse") return;
+   tx=e.clientX; ty=e.clientY;
+   if(!on){ on=true; cx=tx; cy=ty; r.classList.add("on"); if(!raf) raf=requestAnimationFrame(loop); }
+   var t=e.target&&e.target.closest?e.target.closest(SEL):null;
+   r.classList.toggle("big", !!t);
+ },{passive:true});
+ document.addEventListener("pointerdown",function(){ r.classList.add("big"); },{passive:true});
+ document.addEventListener("pointerup",function(){ r.classList.remove("big"); },{passive:true});
+ document.addEventListener("mouseleave",function(){ r.classList.remove("on"); },{passive:true});
+ document.addEventListener("mouseenter",function(){ if(on) r.classList.add("on"); },{passive:true});
+})();</script>
+
+<script>(function(){
+  function wire(prefix, railId){
+    var r=document.getElementById(railId),
+        prev=document.getElementById(prefix+"Prev"),
+        next=document.getElementById(prefix+"Next");
+    if(!r||!prev||!next) return;
+    function upd(){
+      var max=r.scrollWidth-r.clientWidth,
+          atStart=r.scrollLeft<=2, atEnd=r.scrollLeft>=max-2||max<=2;
+      prev.disabled=atStart; next.disabled=atEnd;
+      r.style.setProperty("--fadeL",atStart?"0px":"64px");
+      r.style.setProperty("--fadeR",atEnd?"0px":"90px");
+    }
+    r.addEventListener("scroll",upd,{passive:true});
+    window.addEventListener("resize",upd,{passive:true});
+    upd();
+  }
+  wire("rail","rail"); wire("team","team-list"); wire("cases","cases-list");
+})();</script>
+
+<script>(function(){
+  if(!("IntersectionObserver" in window)) return;
+  if(window.matchMedia && matchMedia("(prefers-reduced-motion:reduce)").matches) return;
+
+  // single elements: revealed once they enter the viewport themselves
+  var singles=["#services > div > h2","#services > p","#process h2","#team h2",
+               "#cases h2","#cases > div > p:last-child","#faq h2","#contacts h2","#contacts form"];
+  // groups: the container enters the viewport -> its children reveal one by one
+  // (so cards past the right edge of the rail reveal too, instead of sliding in transparent)
+  var groups=[["#rail",".svc",70,6],["#team-list","article",70,6],["#cases-list","article",70,5],
+              ["#process .path",".st",110,4],["#faq > div","details",60,5]];
+
+  function done(el){setTimeout(function(){el.style.willChange="auto";el.style.removeProperty("--rvd")},1200)}
+
+  var io=new IntersectionObserver(function(ents){
+    ents.forEach(function(en){
+      if(!en.isIntersecting) return;
+      var t=en.target, kids=t.__rvKids;
+      if(kids){
+        var step=t.__rvStep, cap=t.__rvCap;
+        Array.prototype.forEach.call(kids,function(k,n){
+          k.style.setProperty("--rvd",(Math.min(n,cap)*step)+"ms");
+          k.classList.add("rv-in"); done(k);
+        });
+      }else{
+        t.classList.add("rv-in"); done(t);
+      }
+      io.unobserve(t);
+    });
+  },{threshold:0.12,rootMargin:"0px 0px -8% 0px"});
+
+  singles.forEach(function(sel){
+    Array.prototype.forEach.call(document.querySelectorAll(sel),function(el){
+      el.classList.add("rv"); io.observe(el);
+    });
+  });
+
+  groups.forEach(function(g){
+    var box=document.querySelector(g[0]); if(!box) return;
+    var kids=box.querySelectorAll(":scope > "+g[1]);
+    if(!kids.length) return;
+    Array.prototype.forEach.call(kids,function(k){k.classList.add("rv")});
+    box.__rvKids=kids; box.__rvStep=g[2]; box.__rvCap=g[3];
+    io.observe(box);
+  });
+})();</script>
+
+<script>(function(){
+  if(!("IntersectionObserver" in window)) return;
+  if(window.matchMedia && matchMedia("(prefers-reduced-motion:reduce)").matches) return;
+
+  function nudge(r){
+    if(r.__nudged||r.__touched) return;
+    if(r.scrollWidth-r.clientWidth<40) return;   // nothing to scroll — no hint
+    r.__nudged=true;
+    var snap=r.style.scrollSnapType;
+    r.style.scrollSnapType="none";               // otherwise snapping swallows the nudge
+    r.scrollTo({left:46,behavior:"smooth"});
+    setTimeout(function(){ r.scrollTo({left:0,behavior:"smooth"}); },480);
+    setTimeout(function(){ r.style.scrollSnapType=snap||""; },1100);
+  }
+
+  var io=new IntersectionObserver(function(ents){
+    ents.forEach(function(en){
+      if(!en.isIntersecting) return;
+      var r=en.target;
+      io.unobserve(r);
+      setTimeout(function(){nudge(r)},700);      // after the cards have revealed
+    });
+  },{threshold:0.35});
+
+  ["rail","team-list","cases-list"].forEach(function(id){
+    var r=document.getElementById(id); if(!r) return;
+    // if the user already scrolled, the hint is not needed
+    ["pointerdown","wheel","touchstart","keydown"].forEach(function(e){
+      r.addEventListener(e,function(){r.__touched=true},{once:true,passive:true});
+    });
+    io.observe(r);
+  });
+})();</script>
+
+<script>(function(){
+  var t=document.querySelector(".htitle"); if(!t) return;
+  if(window.matchMedia && matchMedia("(prefers-reduced-motion:reduce)").matches) return;
+  // lines are hidden here, from the script: if the script fails, the headline simply stays visible
+  t.classList.add("pre");
+  var fired=false;
+  function go(){
+    if(fired) return; fired=true;
+    requestAnimationFrame(function(){requestAnimationFrame(function(){
+      t.classList.remove("pre"); t.classList.add("go");
+    })});
+  }
+  // wait for the fonts: otherwise the animation plays on the fallback typeface
+  var fonts = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+  var seen = false;
+  function maybe(){ if(seen) go(); }
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(e){
+      if(e[0].isIntersecting){ seen=true; io.disconnect(); fonts.then(maybe); }
+    },{threshold:0.2});
+    io.observe(t);
+  } else { seen=true; fonts.then(go); }
+  setTimeout(function(){ seen=true; go(); },2500);   // safety net
+})();</script>
+
+<script>(function(){
+  var list=document.querySelectorAll("#faq details");
+  if(!list.length) return;
+  var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches;
+  if(reduce) return;                       // keep the native instant behaviour
+
+  Array.prototype.forEach.call(list,function(d){
+    var sum=d.querySelector("summary"); if(!sum) return;
+    d.classList.add("anim");
+    var busy=false;
+
+    function shut(){ d.style.height=""; d.classList.remove("anim-run"); busy=false; }
+
+    sum.addEventListener("click",function(e){
+      e.preventDefault();
+      if(busy) return;
+      busy=true;
+      d.classList.add("anim-run");
+      var start=d.offsetHeight;
+
+      if(d.open){
+        // closing: first animate down to the summary height, then remove open
+        d.style.height=start+"px";
+        void d.offsetHeight;
+        var shutH=sum.offsetHeight+parseFloat(getComputedStyle(d).paddingTop)
+                                  +parseFloat(getComputedStyle(d).paddingBottom);
+        d.style.height=shutH+"px";
+        d.addEventListener("transitionend",function h(ev){
+          if(ev.propertyName!=="height") return;
+          d.removeEventListener("transitionend",h);
+          d.open=false; shut();
+        });
+      }else{
+        d.style.height=start+"px";
+        d.open=true;
+        var full=d.scrollHeight;
+        void d.offsetHeight;
+        d.style.height=full+"px";
+        d.addEventListener("transitionend",function h(ev){
+          if(ev.propertyName!=="height") return;
+          d.removeEventListener("transitionend",h);
+          shut();                           // drop the fixed height — it grows on its own from here
+        });
+      }
+    });
+  });
+})();</script>
+
+<script>(function(){
+  var btn=document.querySelector(".burger"), nav=document.getElementById("mnav");
+  if(!btn||!nav) return;
+
+  function setOpen(on){
+    btn.setAttribute("aria-expanded",on?"true":"false");
+    btn.setAttribute("aria-label",on?"Close menu":"Open menu");
+    nav.classList.toggle("open",on);
+  }
+  function close(back){ setOpen(false); if(back) btn.focus(); }
+
+  btn.addEventListener("click",function(e){
+    e.stopPropagation();
+    setOpen(btn.getAttribute("aria-expanded")!=="true");
+  });
+  // following a link closes the menu
+  nav.addEventListener("click",function(e){ if(e.target.closest("a")) close(false); });
+  // click outside the menu
+  document.addEventListener("click",function(e){
+    if(btn.getAttribute("aria-expanded")!=="true") return;
+    if(!nav.contains(e.target) && e.target!==btn) close(false);
+  });
+  // Esc
+  document.addEventListener("keydown",function(e){
+    if(e.key==="Escape" && btn.getAttribute("aria-expanded")==="true") close(true);
+  });
+  // if the window grows to desktop width, the menu hides
+  window.addEventListener("resize",function(){
+    if(window.innerWidth>1024 && btn.getAttribute("aria-expanded")==="true") close(false);
+  },{passive:true});
+})();</script>
+</body>
+</html>
