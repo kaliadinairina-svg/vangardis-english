@@ -2,7 +2,7 @@
 
 A portfolio study case: a one-page website for a fictional law firm specialising in criminal defense. English version.
 
-**Live version:** _add the URL once deployed_
+**Live version:** https://vangardis-english.vercel.app
 
 ---
 
@@ -104,4 +104,4 @@ Images are cropped to the proportions of their blocks; no other changes were mad
 
 ---
 
-Design: Figma. Author: Iryna Kaliadina.
+Design: Figma. Author: Irina Kaliadina.
